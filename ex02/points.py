@@ -52,7 +52,7 @@ def train_plot() -> None:
 
 
 def main() -> None:
-    # test_plot()
+    test_plot()
     train_plot()
 
 
