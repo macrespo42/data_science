@@ -13,8 +13,8 @@ def separate(path: str, name="data", train_percentage=80) -> None:
     data_train = df.iloc[0:train_stop_idx]
     data_test = df.iloc[train_stop_idx::]
 
-    train_path = f"datasets/{name}_train"
-    test_path = f"datasets/{name}_test"
+    train_path = f"{name}_train"
+    test_path = f"{name}_test"
 
     try:
         data_train.to_csv(train_path)
